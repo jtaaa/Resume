@@ -5,6 +5,7 @@
 \usepackage{framed}
 \usepackage{lipsum}
 \usepackage{vwcol}
+\usepackage{hyperref}
 \usepackage[letterspace=-50]{microtype}
 \definecolor{shadecolor}{rgb}{0.76,0.76,0.76}
 \setlength{\parindent}{0cm}
@@ -22,6 +23,7 @@
 \hfill
 \makebox[0.4\linewidth][c]{
     \parbox{1.35\paperwidth}{
+        \vspace{-3mm}
         \begin{shaded*}
             {\Huge\bf Joshua Allum}\par
             {\tt\small https://jtaaa.github.io}\par
@@ -79,17 +81,20 @@ Faculty/Major Average: 94.33\%}
 {\small\fontfamily{qag}\selectfont Represented Trinidad \& Tobago internationally at the 23\ts{rd} WSJ in Japan.}
 \bigskip
 
+\vspace{10mm}
+{\sffamily\bf 2013-15 $|$ {\large CS Club}}\par
+{\small\fontfamily{qag}\selectfont Executive member of the St. Mary's College Computer science club.}
+
 %---------------------------------------%
 % Links
 %---------------------------------------%
 \makebox[0.67\linewidth][c]{
     \parbox{0.38\paperwidth}{
         \begin{shaded*}
-            \hspace{0.6in}{\Large\sc Links} \smallskip\par
-            \hspace{0.3in}{\small\sffamily\sc GitHub \hspace{2.12mm}$|$ {\tt\normalsize\lsstyle github.com/jtaaa}}\par
-            \hspace{0.3in}{\small\sffamily\sc LinkedIn $|$ {\tt\normalsize\lsstyle linkedin.com/in/joshua-allum}}\par
-        \end{shaded*}}} \par
-
+            \hspace{0.6in}{\LARGE\sc Links} \smallskip\par
+            \hspace{0.3in}{\small\sffamily\sc GitHub \hspace{2.12mm}$|$ {\tt\normalsize\lsstyle \href{https://github.com/jtaaa}{github.com/jtaaa}}}\par
+            \hspace{0.3in}{\small\sffamily\sc LinkedIn $|$ {\tt\normalsize\lsstyle \href{https://www.linkedin.com/in/joshua-allum/}{linkedin.com/in/joshua-allum}}}\par
+        \end{shaded*}}}
 
 \end{minipage}
 \hfill
@@ -101,13 +106,14 @@ Faculty/Major Average: 94.33\%}
 {\LARGE\sc - Work Experience -} \smallskip\par
 {\large\sffamily\bf Western Union} $|$
 {\small\sffamily\lsstyle Front Line Agent, Sept 2015 - May 2016} \par
-{\fontfamily{qag}\selectfont\textbullet\ Handled money transactions of hundreds of clients per week.\\
-\textbullet\ Work involved the creation and use of excel spreadsheets to record daily transactions and produce predicted balance figures.}
+{\small\fontfamily{qag}\selectfont\textbullet\ Handled money transactions of hundreds of clients per week.\\
+\textbullet\ Created excel spreadsheets to record daily transactions and produce predicted balance figures.}
 \smallskip
 
 {\large\sffamily\bf Quivira Scout Ranch} $|$
 {\small\sffamily\lsstyle International Camp Counselor, June 2016} \par
-{\fontfamily{qag}\selectfont\textbullet\  Worked with young scouts teaching them about scouting and sharing Trinbagonian culture.\\\textbullet\  Collaborated with the management of QSR and the scouting association of Kansas to try to inform Kansan scouts of the world beyond the USA.} \par
+{\small\fontfamily{qag}\selectfont\textbullet\ Taught young scouts about scouting, specifically rowing, kayaking, motor-boating and sailing.
+\\\textbullet\  Collaborated with the management of QSR and the scouting association of Kansas to inform Kansan scouts of the world beyond the USA.} \par
 \bigskip
 
 %---------------------------------------%
@@ -117,32 +123,42 @@ Faculty/Major Average: 94.33\%}
 {\sffamily\bf\small {\large Carnival Band Database $|$} Microsoft Access}\par
 {\small\fontfamily{qag}\selectfont\textbullet\ Designed a database to manage a carnival band's member data.\\
 \textbullet\ Included multiple forms, reports and mail merge features to sign up new masqueraders, show statistical data and distribute personalized band information to members.\\
-\textbullet\ Integrated with Microsoft Excel and Office to facilitate easy data input and output and meaningful statistical information.}\par
+\textbullet\ Integrated with Microsoft Excel and Office to facilitate easy data input and information output in the form of charts and graphs.}
 \medskip
 
 {\sffamily\bf\small {\large Heart Rate Calculator $|$} C}\par
-{\small\fontfamily{qag}\selectfont\textbullet\ Designed and coded from scratch a C program that computes, stores and manages the average heart rates of users and provides statistical fitness data. \\
+{\small\fontfamily{qag}\selectfont\textbullet\ Designed and coded from scratch a C program that computes, stores and manages the average heart rates of users. \\
 \textbullet\ Features include data storage and management in a custom encoded file and warning messages for abnormal heart rates.\\
 \textbullet\ Fitness level is calculated by checking user heartrate against the average heart rate of a person in the user's demographic.}\par
 \medskip
 
-{\sffamily\bf\small {\large Connected Web-app $|$} HTML, CSS, PHP}\par
-{\small\fontfamily{qag}\selectfont\textbullet\ My first collaboration with a team of four to create a web-app that stores a set of user-defined hyperlinks and generates a unique web-page, with the user's links embedded, that can be shared.\\
-\textbullet\ I handled the majority of the back-end using PHP to store user links in a .txt file and generate page URLs.}\par
+{\sffamily\bf\small {\large Connect Web-app $|$} HTML, CSS, PHP}\par
+{\small\fontfamily{qag}\selectfont\textbullet\ A collaboration with a team of four to create a web-app that stores a set of user-defined hyperlinks and generates a unique web-page, with the user's links embedded, that can be shared.\\
+\textbullet\ I took on the back-end and learnt PHP on the spot in order to store user links in a .txt file and generate page URLs.}\par
 \bigskip
 
+
+%---------------------------------------%
+% Ongoing Projects
+%---------------------------------------%
 {\LARGE\sc - Ongoing Projects -} \smallskip\par
 {\sffamily\bf\small {\large CapeNotes.com $|$} HTML, CSS, PHP, JavaScript}\par
-{\small\fontfamily{qag}\selectfont\textbullet\ Working on a website that provides CAPE students with course notes, practice questions and a list of relevant materials for CAPE courses.}\par
+{\small\fontfamily{qag}\selectfont\textbullet\ Working in my spare time on a website that provides CAPE students with course notes, practice questions and a list of relevant materials.}\par
 \bigskip
 
-{\LARGE\sc - Clubs \& Activities -} \smallskip\par
+
+%---------------------------------------%
+% Clubs & Activities
+%---------------------------------------%
+\hspace{-6.5cm}{\LARGE\sc - Clubs\hspace{1.8cm} \&\hspace{1.8cm} Activities -} \smallskip\par
 {\sffamily\bf 2009-15 $|$ {\large First Trinidad Sea Scouts}}\par
-{\fontfamily{qag}\selectfont Troop Leader tasked with planning and organizing events.\\
-Community work includes beach clean ups, charity events and life guarding services.}\par
+{\small\fontfamily{qag}\selectfont Troop Leader tasked with planning and organizing events.\\
+40+ hours of community work includes beach clean ups, charity events and life guarding services.}\par
 {\sffamily\bf 2009-15 $|$ {\large Holistic Music School Ensemble}}\par
-{\fontfamily{qag}\selectfont Semi-professional lead flautist in a mainly
+{\small\fontfamily{qag}\selectfont Semi-professional lead flautist in a mainly
 jazz but also folk and locally oriented band.}\par
+{\sffamily\bf 2013-14 $|$ {\large Management Team}}\par
+{\small\fontfamily{qag}\selectfont Member of the St. Mary's College M-Team that plans and organizes school events such as fundraisers and external functions.}\par
 
 \end{minipage}
 
