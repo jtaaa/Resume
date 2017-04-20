@@ -1,0 +1,137 @@
+\documentclass{resume}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{lipsum}
+\usepackage{hyperref}
+\newcommand{\ts}{\textsuperscript}
+\newcommand{\present}{$\rightarrow$}
+
+\title{Resume}
+\author{Joshua Allum}
+\date{April 2017}
+
+\begin{document}
+% Removes page numbering
+\pagenumbering{gobble}
+%---------------------------------------%
+% Title and Contact Info
+%---------------------------------------%
+\rightshade{blue!7}{
+    \textbf{\Huge Joshua Allum}
+    \smallskip\par
+    \begin{tabular}{l  l@{ }l}
+        \texttt{\small https://jtaaa.github.io} &
+        \raisebox{-.25\height}{\includegraphics[width=4mm, height=4mm]{github}} &
+        \href{https://github.com/jtaaa}{jtaaa} \\
+        \texttt{\small joshuatallum@gmail.com $|$ 647-701-9615} &
+        \raisebox{-0.15\height}{\includegraphics[width=4mm, height=4mm]{linkedin}} &
+        \href{https://www.linkedin.com/in/joshua-allum/}{joshua-allum} \\
+    \end{tabular}}
+%
+%---------------------------------------%
+% Left Column
+%---------------------------------------%
+\begin{minipage}[t]{0.35\linewidth}
+\raggedright
+\setlength{\parindent}{0pt}
+\section{Education}
+\subsection{University of Waterloo}
+Honours Computer Science\\
+{\small\it
+    Dean's Honours List: Fall 2016
+    \smallskip\par\bf
+    \begin{tabular}{@{}l r}
+        Cumulative Average: & 88.80\%\\
+        Faculty/Major Average: & 94.33\% 
+    \end{tabular}}
+
+\subsection{St. Mary's College}
+Graduated in May 2015\\
+Achieved 10 grade 1's in CAPE.
+
+\section{Skills}
+\subsection{Proficient in:}
+C, C++, Python, JavaScript, HTML, Racket, Git, \LaTeX.
+\subsection{Familiar with:}
+Android, Java, Node.js, Angular.js, Firebase, Express.js, CSS, Microsoft~Word, Excel,~Access.
+\subsection{Learning:}
+MySQL, R
+
+\section{Achievements}
+\lheading{2013}{10\ts{th} overall in the Caribbean}
+CAPE, Computer Science Unit 1.
+\lheading{2013}{Chief Scout Award}
+Awarded by the President of Trinidad~and Tobago.
+\lheading{2015}{National Scholarship Winner}
+Awarded based on exceptional performance in CAPE.
+\lheading{2014}{World Scout Jamboree}
+Represented Trinidad \& Tobago internationally at the 23\ts{rd} WSJ in Japan.
+\lheading{2012-16}{Music Festival Champions}
+Winner with the Holistic Music School Ensemble of the biannual T\&T Music Festival three times consecutively.
+
+\section{Clubs}
+\lheading{2017\present}{ACS}
+Web Admin and executive member of the UW Association of Caribbean Students.
+\lheading{2016\present}{Caribbean Tech Forum}
+Contributing member of small community of tech enthusiasts.
+\lheading{2016\present}{UW Stats, CS, Math Club}
+First year member of university clubs.
+\end{minipage}
+\hfill
+%
+%---------------------------------------%
+% Right Column
+%---------------------------------------%
+\begin{minipage}[t]{0.63\linewidth}
+\section{Work Experience}
+\rheading{Western Union}{\rm Front Line Agent, Sept 2015 - May 2016}
+\begin{itemize}[noitemsep,topsep=0pt]
+    \item Handled money transactions of hundreds of clients per week.
+    \item Created excel spreadsheets to record daily transactions and produce predicted balance figures.
+\end{itemize}
+\rheading{Quivira Scout Ranch}{\rm International Camp Counselor, June 2016}
+\begin{itemize}
+    \item Taught young scouts about scouting, specifically~rowing, kayaking, motor-boating and~ sailing.
+    \item Collaborated with the management of~QSR and the scouting association of Kansas to inform Kansan~scouts of the world beyond the USA.
+\end{itemize}
+
+\section{Projects}
+\rheading{Connect Web-app}{HTML, CSS, PHP}
+\begin{itemize}
+    \item A collaboration with a team of four to create a web-app that stores a set of user-defined hyperlinks and generates a unique web-page, with the user's links embedded, that can be shared.
+    \item I took on the back-end and learnt PHP on the spot in order to store user links in a .txt file and generate page URLs.
+\end{itemize}
+\rheading{PDF-Splitter}{Node.js, Express.js}
+\begin{itemize}
+    \item Designed a web-server that I host locally that splits user-uploaded PDF files.
+    \item My first heavily back-end oriented project.
+\end{itemize}
+\rheading{Heart Rate Calculator}{C}
+\begin{itemize}
+    \item Designed and coded from scratch a C program that computes, stores and manages the average heart rates of users.
+    \item Features include data storage and management in a custom encoded file and warning messages for abnormal heart rates.
+    \item Fitness level is calculated by checking user heart rate against the average heart rate of a person in the user's demographic.
+\end{itemize}
+
+\section{Ongoing Projects}
+\rheading{CapeNotes.com}{HTML, CSS, PHP, JavaScript}
+\begin{itemize}
+    \item Working in my spare time on a website that provides CAPE students with course notes, practice questions and a list of relevant materials.
+\end{itemize}
+\rheading{STAT 230 Course Notes}{\LaTeX}
+\begin{itemize}
+    \item Creating a fully-fledged book including proofs, theorems, graphs and original examples, for STAT 230 at UW in \LaTeX.
+\end{itemize}
+
+\section{Activities}
+\lheading{2009\present}{Holistic Music School Ensemble}
+Semi-professional lead flautist in a mainly jazz but also folk and locally oriented band.
+\lheading{2009-15}{First Trinidad Sea Scouts}
+Troop Leader tasked with planning and organizing events.\\
+Over 40 hours of community work includes beach clean ups, charity events and life guarding services.
+\end{minipage}
+
+\end{document}
