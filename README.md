@@ -1,2 +1,2 @@
-# Resum&eacute;
-My Resum&eacute; including the LaTeX source.
+# R&eacute;sum&eacute;
+My R&eacute;sum&eacute; including the LaTeX source.
