@@ -12,7 +12,6 @@
 
 \LoadClass[10pt]{article}
 \RequirePackage{vwcol}
-\RequirePackage{xcolor}
 \RequirePackage[a4paper, hmargin=0.55in, vmargin=0.8in]{geometry}
 \usepackage[T1]{fontenc}
 \RequirePackage{setspace}

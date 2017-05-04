@@ -4,6 +4,10 @@
 \usepackage{graphicx}
 \graphicspath{ {images/} }
 
+\usepackage[dvipsnames]{xcolor}
+\colorlet{ShadeBlue}{blue!7!}
+\colorlet{ShadeGrey}{gray!50!}
+
 \usepackage{lipsum}
 \usepackage{hyperref}
 \newcommand{\ts}{\textsuperscript}
@@ -19,14 +23,14 @@
 %---------------------------------------%
 % Title and Contact Info
 %---------------------------------------%
-\rightshade{blue!7}{
+\rightshade{ShadeBlue}{
     \textbf{\Huge Joshua Allum}
     \smallskip\par
     \begin{tabular}{l  l@{ }l}
-        \texttt{\small https://jtaaa.github.io} &
+        \texttt{\small \href{https://jallum.com}{jallum.com}} &
         \raisebox{-.25\height}{\includegraphics[width=4mm, height=4mm]{github}} &
         \href{https://github.com/jtaaa}{jtaaa} \\
-        \texttt{\small joshuatallum@gmail.com $|$ 647-701-9615} &
+        \texttt{\small \href{mailto:joshuatallum@gmail.com}{joshuatallum@gmail.com} $|$ 647-701-9615} &
         \raisebox{-0.15\height}{\includegraphics[width=4mm, height=4mm]{linkedin}} &
         \href{https://www.linkedin.com/in/joshua-allum/}{joshua-allum} \\
     \end{tabular}}
@@ -56,7 +60,7 @@ Achieved 10 grade 1's in CAPE.
 \subsection{Proficient in:}
 C, C++, Python, JavaScript, HTML, Racket, Git, \LaTeX.
 \subsection{Familiar with:}
-Android, Java, Node.js, Angular.js, Firebase, Express.js, CSS, Microsoft~Word, Excel,~Access.
+Android, Java, Node.js, Angular~2, Firebase, Express.js, CSS, Microsoft~Word, Excel,~Access.
 \subsection{Learning:}
 MySQL, R
 
@@ -117,7 +121,7 @@ First year member of university clubs.
 \end{itemize}
 
 \section{Ongoing Projects}
-\rheading{CapeNotes.com}{HTML, CSS, PHP, JavaScript}
+\rheading{CapeNotes.com}{Angular 2}
 \begin{itemize}
     \item Working in my spare time on a website that provides CAPE students with course notes, practice questions and a list of relevant materials.
 \end{itemize}
