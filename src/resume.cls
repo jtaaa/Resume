@@ -12,11 +12,11 @@
 
 \LoadClass[10pt]{article}
 \RequirePackage{vwcol}
-\RequirePackage[a4paper, hmargin=0.55in, vmargin=0.8in]{geometry}
+\RequirePackage[a4paper, hmargin=0.40in, vmargin=0.8in]{geometry}
 \usepackage[T1]{fontenc}
 \RequirePackage{setspace}
 \RequirePackage{enumitem}
-\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=*}
+\setlist[itemize]{itemsep=1.5pt, parsep=0pt, topsep=1.7pt, leftmargin=*}
 \setlength{\rightmargin}{\the\dimexpr1in+\oddsidemargin\relax}
 \setlength{\parindent}{0pt}
 \newcommand{\bodyfont}{\fontfamily{qag}\selectfont}
