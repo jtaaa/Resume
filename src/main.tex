@@ -5,7 +5,7 @@
 \graphicspath{ {images/} }
 
 \usepackage[dvipsnames]{xcolor}
-\colorlet{ShadeBlue}{blue!7!}
+\definecolor{ShadeBlue}{HTML}{d0e0f4}
 \colorlet{ShadeGrey}{gray!50!}
 
 \usepackage{lipsum}
@@ -23,7 +23,7 @@
 %---------------------------------------%
 % Title and Contact Info
 %---------------------------------------%
-\rightshade{ShadeBlue}{
+\rightshade{ShadeGrey}{
     \textbf{\Huge Joshua Allum}
     \smallskip\par
     \begin{tabular}{l  l@{ }l}
@@ -43,13 +43,13 @@
 \setlength{\parindent}{0pt}
 \section{Education}
 \subsection{University of Waterloo}
-Honours Computer Science\\
+Honours Computer Science, Co-op\\
 {\small\it
-    Dean's Honours List: All completed terms
+    Dean's Honours List: F-2016, W-2017
     \smallskip\par\bf
     \begin{tabular}{@{}l r}
-        Cumulative Average: & 90.50\%\\
-        Faculty/Major Average: & 94.83\% 
+        Cumulative Average: & 86.44\%\\
+        Faculty/Major Average: & 91.67\% 
     \end{tabular}}
 
 \subsection{St. Mary's College}
@@ -58,9 +58,9 @@ Achieved 10 grade 1's in CAPE.
 
 \section{Skills}
 \subsection{Proficient in:}
-C, C++, Python, JavaScript, Node.js, HTML, Angular, Git, \LaTeX, Racket
+C, C++, Python, JavaScript, Node.js, HTML, Angular, React, Git, \LaTeX, Racket
 \subsection{Familiar with:}
-C\#, .NET core, ASP.NET, MS~Bot Framework, LUIS.ai, Android, Java, Firebase, Express.js, CSS
+C\#, .NET core, ASP.NET, MS~Bot Framework, LUIS.ai, Android, Java, Firebase, Express.js, CSS, Redux
 \subsection{Some experience:}
 R, SQL, MS OData Stack
 
@@ -91,6 +91,10 @@ First year member of university clubs.
 %---------------------------------------%
 \begin{minipage}[t]{0.63\linewidth}
 \section{Work Experience}
+\rheading{\href{http://www.uwblueprint.org/}{UWBluepint}}{\rm Project Developer, January 2018 \present}
+\begin{itemize}
+    \item Collaborating with a team of developers to produce a mobile app for the \href{http://ontariosecondaryschooldancefest.ca/}{Ontario Secondary School DanceFest} to allow judges to seamlessly record real-time audio adjudications during dances and score participants in one coherent offline capable interface.
+\end{itemize}
 \rheading{\href{http://www.teleios-systems.com/}{Teleios Systems Limited}}{\rm Software Dev Intern, June 2017 - Aug 2017}
 \begin{itemize}
     \item Contributed to a full solution for the government of the Bahamas' new \href{http://www.nhibahamas.gov.bs/}{NHI program} by developing a .NET core web service to validate and sync user info between Bahamian databases with transient-fault-handling via \href{https://github.com/App-vNext/Polly}{Polly}.
@@ -102,11 +106,11 @@ First year member of university clubs.
     \item Handled money transactions of hundreds of clients per week.
     \item Created excel spreadsheets to record daily transactions and produce predicted balance figures.
 \end{itemize}
-\rheading{\href{http://www.quivira.org/Camping/Quivira\%20Scout\%20Ranch}{Quivira Scout Ranch}}{\rm International Camp Counselor, June 2016}
-\begin{itemize}
-    \item Taught young scouts about scouting, specifically~rowing, kayaking, motor-boating and~ sailing.
-    \item Collaborated with the management of~QSR and the scouting assoc. of Kansas to inform Kansan~scouts of the world beyond the USA.
-\end{itemize}
+% \rheading{\href{http://www.quivira.org/Camping/Quivira\%20Scout\%20Ranch}{Quivira Scout Ranch}}{\rm International Camp Counselor, June 2016}
+% \begin{itemize}
+%     \item Taught young scouts about scouting, specifically~rowing, kayaking, motor-boating and~ sailing.
+%     \item Collaborated with the management of~QSR and the scouting assoc. of Kansas to inform Kansan~scouts of the world beyond the USA.
+% \end{itemize}
 
 \section{Projects}
 \rheading{\href{https://github.com/jtaaa/ArgonJS-PlayGround}{ArgonJS-Playground}}{Argon.js, A-Frame, Socket.io, LUIS.ai}
