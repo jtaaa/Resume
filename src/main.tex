@@ -6,10 +6,11 @@
 
 \usepackage[dvipsnames]{xcolor}
 \definecolor{ShadeBlue}{HTML}{d0e0f4}
+\definecolor{LinkBlue}{HTML}{04398e}
 \colorlet{ShadeGrey}{gray!50!}
 
 \usepackage{lipsum}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, urlcolor=LinkBlue]{hyperref}
 \newcommand{\ts}{\textsuperscript}
 \newcommand{\present}{$\rightarrow$}
 
@@ -26,11 +27,11 @@
 \rightshade{ShadeGrey}{
     \textbf{\Huge Joshua Allum}
     \smallskip\par
-    \begin{tabular}{l  l@{ }l l}
+    \begin{tabular}{l l l@{\hspace{3em}}l@{ }l l@{ }l}
         \texttt{\small \href{https://jallum.com}{jallum.com}} &
+        \texttt{\small \href{mailto:joshuatallum@gmail.com}{joshuatallum@gmail.com}} & \texttt{\small 647-781-4107} &
         \raisebox{-.25\height}{\includegraphics[width=4mm, height=4mm]{github}} &
-        \href{https://github.com/jtaaa}{jtaaa} \\
-        \texttt{\small \href{mailto:joshuatallum@gmail.com}{joshuatallum@gmail.com} $|$ 868-498-1026} &
+        \href{https://github.com/jtaaa}{jtaaa} &
         \raisebox{-0.15\height}{\includegraphics[width=4mm, height=4mm]{linkedin}} &
         \href{https://www.linkedin.com/in/joshua-allum/}{joshua-allum}
     \end{tabular}}
@@ -38,13 +39,13 @@
 %---------------------------------------%
 % Left Column
 %---------------------------------------%
-\begin{minipage}[t]{0.35\linewidth}
+\begin{minipage}[t]{0.32\linewidth}
 \raggedright
 \setlength{\parindent}{0pt}
 
 \section{Summary of Qualifications}
 \subsection{Leadership Skills}
-Developed through 3 years as troop leader of troop of 40+ scouts, planning activities and coordinating events.
+Developed through 3 years as troop leader of 40+ scouts, planning activities and coordinating events.
 \subsection{Software Development Skills}
 More than two years of experience using JavaScript, Node.js, HTML, Angular, React, Git and \LaTeX~in production projects both paid and unpaid for non-profit.
 \subsection{Communication Skills}
@@ -60,20 +61,19 @@ Awarded by the President of Trinidad~and Tobago.
 \lheading{2015}{National Scholarship Winner}
 Awarded based on exceptional performance in CAPE.
 \lheading{2014}{World Scout Jamboree}
-Represented Trinidad \& Tobago internationally at the 23\ts{rd} WSJ in Japan.
+Represented T\&T internationally at the 23\ts{rd} WSJ in Japan.
 \lheading{2012-16}{Music Festival Champions}
-Winner with the Holistic Music School Ensemble of the biannual T\&T Music Festival three times consecutively.
+Winner with the Holistic Music School Ensemble of the biannual T\&T Music Festival three times.
 
 \section{Clubs}
 \lheading{2017\present}{ACS}
-Web Admin and executive member of the UW Association of Caribbean Students.
+Web Admin and exec member of UW Association of Caribbean Students.
 \lheading{2016\present}{Caribbean Tech Forum}
 Contributing member of small community of tech enthusiasts.
 
 \section{Education}
 Honours Computer Science Co-op,\\
 {\footnotesize University of Waterloo, expected Winter 2021}
-\smallskip\par
 {
     \begin{tabular}{@{}l r}
         Cumulative Average: & 86.44\%\\
@@ -87,23 +87,34 @@ Honours Computer Science Co-op,\\
 %---------------------------------------%
 % Right Column
 %---------------------------------------%
-\begin{minipage}[t]{0.63\linewidth}
+\begin{minipage}[t]{0.66\linewidth}
 \section{Work Experience}
 \rheading{\href{http://www.massygroup.com/infocom/}{Massy Technologies InfoCom}}{\rm Software/Data Science, May 2018 \present}
 \begin{itemize}
-    \item Identifying trends and insights in customer spending to be integrated into further expansion of Massy~Stores using techniques such as Market Basket Analysis and Cluster Analysis.
-    \item Producing statistics and tangible metrics of branch performance based on large datasets of transactions.
+%   Basket Analysis and Cluster Analysis on large datasets
+%   Library Chatbot Application
+%   Predictive analysis of item pickup in stores
+%   Built the incident reporter multi-platform app using react-native
+%   end expo toolchain to access device API's for location and camera
+%   
+%
+%
+    % \item Developed Incident Reporter app for the \href{http://chaguanasborough.com/}{Chaguanas Borough Corporation}
+    \item Created InvioBox, a convenient DropBox-like service that will be available in all \href{https://www.inviocloud.com/login}{InvioCloud} packages, Massy's Cloud Computing offering.
+    \item Used data mining techniques such as Market Basket Analysis and Cluster Analysis to integrate into Massy~Stores' expansion into online sales by predicting customers' cart and recommending items.
+    % \item Identifying trends and insights in customer spending to be integrated into further expansion of Massy~Stores using techniques such as Market Basket Analysis and Cluster Analysis.
+    \item Produced statistics and tangible metrics of inter-branch performance based on large datasets of transactions using Pandas, Plotly, Watson.
 \end{itemize}
 \rheading{\href{http://www.uwblueprint.org/}{UWBluepint}}{\rm Project Developer, January 2018 \present}
 \begin{itemize}
-    \item Collaborating with team of developers to produce software solutions for Non-Profit Organizations.
+    \item Collaborating to produce software solutions for NPOs.
     \item Created mobile app for \href{http://ontariosecondaryschooldancefest.ca/}{Ontario Secondary School DanceFest} for judges to record real-time audio adjudications during dances and score participants in one coherent offline capable interface.
 \end{itemize}
 \rheading{\href{http://www.teleios-systems.com/}{Teleios Systems Limited}}{\rm Software Dev Intern, June 2017 - Aug 2017}
 \begin{itemize}
-    \item Contributed to full solution for the government of Bahamas' new \href{http://www.nhibahamas.gov.bs/}{NHI program} by developing a .NET core web service to validate and sync user info between Bahamian databases with transient-fault-handling via \href{https://github.com/App-vNext/Polly}{Polly}.
-    \item Prepared and hosted the company's \href{https://www.teleioscodejam.com/news/2017/8/11/powar-hour-live}{10\ts{th} Power Hour Live} session, a live discussion/showcasing of current, exciting technologies.
-    \item Created and deployed the \href{https://www.teleioscodejam.com/}{Teleios Code Jam} bot using MS Bot Framework and Luis.ai. Accessible by messaging \href{https://www.facebook.com/TeleiosCodeJam/}{TCJ Facebook page} or via Cortana.
+    \item Contributed to full solution for the govt of Bahamas' new \href{http://www.nhibahamas.gov.bs/}{NHI program} developing a .NET core web service to validate and sync user info between Bahamian databases with transient-fault-handling via \href{https://github.com/App-vNext/Polly}{Polly}.
+    \item Prepared and hosted the company's \href{https://www.teleioscodejam.com/news/2017/8/11/powar-hour-live}{10\ts{th} Power Hour Live} session, a live discussion/showcase of current, exciting technologies.
+    \item Created \href{https://www.teleioscodejam.com/}{Teleios Code Jam} bot using MS Bot Framework and Luis.ai. Deployed to \href{https://www.facebook.com/TeleiosCodeJam/}{TCJ Facebook page} and Cortana.
 \end{itemize}
 % \rheading{\href{https://www.westernunion.com/ca/en/home.html}{Western Union}}{\rm Front Line Agent, Sept 2015 - May 2016}
 % \begin{itemize}
@@ -117,18 +128,24 @@ Honours Computer Science Co-op,\\
 % \end{itemize}
 
 \section{Projects}
-\rheading{\href{https://github.com/jtaaa/ArgonJS-PlayGround}{ArgonJS-Playground}}{Argon.js, A-Frame, Socket.io, LUIS.ai}% July 2017
+\rheading{\href{https://github.com/jtaaa/ArgonJS-PlayGround}{ArgonJS-Playground}}{Argon.js, NodeJS, A-Frame, Socket.io, LUIS.ai}% July 2017
 \begin{itemize}
     \item Developed AR scene using Argon.js with NodeJS backend server that accepts API requests to modify the virtual scene.
-    \item Used socket.io to emit scene modifications to all connected users so objects of the world are modified simultaneously for all users.
+    \item Used Socket.io to emit scene modifications to all connected users so objects of the world are modified simultaneously for all users.
     \item Demoed app using bot created with MS Bot Framework and LUIS.ai to send appropriate API requests using natural language.
 \end{itemize}
-\rheading{\href{http://uwacs.club/}{UW Assoc.~of Caribbean Students Website}}{Angular, Firebase}% May 2017 \present
+\rheading{\href{http://uwacs.club/}{Incident Reporter}}{Expo, React-Native, NodeJS, Firebase}% May 2017 \present
 \begin{itemize}
-    \item Built from scratch and maintain the clubs current website.
-    \item Includes admin features and varying user role access.
-    \item Integrated with Firebase to manage the database of users and allow admins to interact conveniently with the data.
+    \item Built for the \href{http://chaguanasborough.com/}{Chaguanas Borough Corporation} as part of initiative for Chaguanas to become Trinidad's first Smart City.
+    \item Integrated user Camera and Location to facilitate real-time reporting of incidents served to Firebase to be immediately visible to the CBC.
+    \item Implemented upvoting system and incident status system to facilitate transparent two-way communication between citizens and authority.
 \end{itemize}
+% \rheading{\href{http://uwacs.club/}{UW Assoc.~of Caribbean Students Website}}{Angular, Firebase}% May 2017 \present
+% \begin{itemize}
+%     \item Built from scratch and maintain the clubs current website.
+%     \item Includes admin features and varying user role access.
+%     \item Integrated with Firebase to manage the database of users and allow admins to interact conveniently with the data.
+% \end{itemize}
 % \rheading{Connect Web-app}{HTML, CSS, PHP}
 % \begin{itemize}
 %     \item A collaboration with a team of four to create a web-app that stores a set of user-defined hyperlinks and generates a unique web-page, with the user's links embedded, that can be shared.
@@ -158,7 +175,7 @@ Honours Computer Science Co-op,\\
 
 \section{Activities}
 \lheading{2009\present}{Holistic Music School Ensemble}
-Semi-professional lead flautist in mainly jazz but also folk and locally oriented band.
+Semi-professional lead flautist in jazz, folk and locally oriented band.
 \lheading{2009-15}{First Trinidad Sea Scouts}
 Troop Leader tasked with planning and organizing events.\\
 Over 40 hours of community work includes beach clean ups, charity events and life guarding services.
