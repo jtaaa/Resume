@@ -12,7 +12,7 @@
 
 \LoadClass[10pt]{article}
 \RequirePackage{vwcol}
-\RequirePackage[a4paper, hmargin=0.40in, vmargin=0.6in]{geometry}
+\RequirePackage[a4paper, hmargin=0.4in, vmargin=0.52in]{geometry}
 \usepackage[T1]{fontenc}
 \RequirePackage{setspace}
 \RequirePackage{enumitem}
